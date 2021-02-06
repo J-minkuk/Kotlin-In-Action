@@ -1,8 +1,7 @@
 package intro
 
-import util.Rectangle
-import util.createRandomCircle
-import util.createRandomRectangle
+import utils.createRandomCircle
+import utils.createRandomRectangle
 
 data class Person(val name: String, val age: Int? = null)
 

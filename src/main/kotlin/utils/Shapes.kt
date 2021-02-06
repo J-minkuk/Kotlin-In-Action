@@ -1,4 +1,4 @@
-package util
+package utils
 
 import java.util.*
 
@@ -18,7 +18,7 @@ class Rectangle(
 
 fun createRandomRectangle(): Rectangle {
     val random = Random()
-    return Rectangle(random.nextInt(), random.nextInt())
+    return Rectangle(random.nextInt(5), random.nextInt(5))
 }
 
 class Circle(
@@ -30,5 +30,5 @@ class Circle(
 
 fun createRandomCircle(): Circle {
     val random = Random()
-    return Circle(random.nextInt())
+    return Circle(random.nextInt(5) + 1)
 }
