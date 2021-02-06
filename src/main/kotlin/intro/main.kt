@@ -1,5 +1,7 @@
 package intro
 
+import util.Rectangle
+import util.createRandomCircle
 import util.createRandomRectangle
 
 data class Person(val name: String, val age: Int? = null)
@@ -22,5 +24,6 @@ fun main(args: Array<String>) {
 
     // property로 특성을 정의하자 && 함수 import
     println(createRandomRectangle().isSquare)
+    println(createRandomCircle().area)
 }
 

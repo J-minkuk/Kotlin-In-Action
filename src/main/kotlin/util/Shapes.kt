@@ -13,10 +13,22 @@ class Rectangle(
     private val width: Int
 ) {
     val isSquare: Boolean
-        get() = (height == width)
+        get() = (this.height == this.width)
 }
 
 fun createRandomRectangle(): Rectangle {
     val random = Random()
     return Rectangle(random.nextInt(), random.nextInt())
+}
+
+class Circle(
+    private val radius: Int
+) {
+    val area: Double
+        get() = this.radius * this.radius * 3.14
+}
+
+fun createRandomCircle(): Circle {
+    val random = Random()
+    return Circle(random.nextInt())
 }
