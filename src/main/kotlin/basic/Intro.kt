@@ -7,7 +7,7 @@ data class Person(val name: String, val age: Int? = null)
 
 fun max(a: Int, b: Int): Int = if (a > b) a else b
 
-fun main(args: Array<String>) {
+fun main() {
     println("Hello World!")
 
     //  Elvis operator ?: -> age가 null인 경우 0을 return, 아니면 age return
@@ -25,4 +25,3 @@ fun main(args: Array<String>) {
     println(createRandomRectangle().isSquare)
     println(createRandomCircle().area)
 }
-

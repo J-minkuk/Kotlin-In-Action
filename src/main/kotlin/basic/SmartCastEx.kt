@@ -10,7 +10,7 @@ interface Expr
 class Num(val value: Int) : Expr
 class Sum(val left: Expr, val right: Expr) : Expr
 
-fun main(args: Array<String>) {
+fun main() {
     println(eval1(Sum(Sum(Num(1), Num(2)), Num(4))))
     println(eval2(Sum(Sum(Num(1), Num(2)), Num(4))))
 }
@@ -33,4 +33,3 @@ fun eval2(e: Expr): Int =
         }
         else -> throw IllegalArgumentException("Unknown Expression")
     }
-
