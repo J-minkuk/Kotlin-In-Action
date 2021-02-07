@@ -1,4 +1,4 @@
-package intro
+package basic
 
 import utils.createRandomCircle
 import utils.createRandomRectangle
