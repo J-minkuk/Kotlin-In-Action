@@ -6,4 +6,5 @@
 * [smart cast](src/main/kotlin/basic/SmartCastEx.kt)
 * [iterator](src/main/kotlin/basic/IteratorEx.kt)
 * [try-catch-finally](src/main/kotlin/basic/TryCatchFinallyEx.kt)
-* [interface](src/main/kotlin/basic/interfaceex/InterfaceEx.kt)
+* [interface](src/main/kotlin/basic/interfaceex)
+* [class](src/main/kotlin/basic/classex)
