@@ -24,4 +24,20 @@ fun main() {
     // property로 특성을 정의하자 && 함수 import
     println(createRandomRectangle().isSquare)
     println(createRandomCircle().area)
+
+    // Collection 자바의 컬렉션과 똑같은 클래스이지만 더 많은 기능을 제공
+    val set = hashSetOf(1, 10, 30)
+    val list = arrayListOf(1, 10 ,30)
+    val map = hashMapOf(1 to "one", 10 to "ten", 30 to "thirty")
+    val strings = listOf("first", "second", "third")
+    println(set.javaClass)  // javaClass는 java's getClass()
+    println(list.javaClass)
+    println(map.javaClass)
+    println(strings.last())
+    println(list.joinToString(", ", "(", ")"))
+    println(list.joinToString(separator = ", ", prefix = "(", postfix = ")"))
+    println()
+
+    // 정규식
+    println("12.345-6.A".split(".", "-"))
 }
